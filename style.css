@@ -1,0 +1,21 @@
+.menu{
+justify-content: space-around;
+background: #4CDC41;
+width: 1200px;
+margin: auto;
+}
+.menu>li{
+    display: inline-block;
+    background: #4CDC41;
+    list-style: none;
+}
+
+header{
+    background: #4CDC41;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Montserrat';
+}
