@@ -52,5 +52,14 @@ nav>ul{
     gap: 8px;
 }
 }
+body.negro{
+    background:#121212;
+    color: white;
+}
+
+body.negro div{
+    background:#121212;
+    color: white;
+}
 
 
