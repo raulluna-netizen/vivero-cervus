@@ -74,25 +74,44 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva; 
     color: black;
 }
+#menu {
+    display: none;
+}
 
 @media (max-width: 550px){
 header{
     flex-direction: column;
-    align-items: flex-star;
+    align-items: flex-start;
     gap: 12px;
 }
 
-nav>ul{
+nav ul{
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    align-items: center;
+    gap: 10px;
 }
+
+nav ul.abierto{
+    display:flex;
+}
+#menu {
+    display: block;
+    background: #3B5E34;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    
+}
+
 }
 body.negro{
     background:#121212;
     color: white;
 }
-
+body.negro .cabeza{
+    background: #3B5E34;
+}
 body.negro div{
     background:#121212;
     color: white;

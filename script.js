@@ -14,3 +14,13 @@ else{
 }
 }
 lumin.addEventListener("click", cambio);
+
+
+
+
+const botonmenu = document.querySelector("#menu");
+const men = document.querySelector("nav ul");
+function menhambur(){
+    men.classList.toggle("abierto");
+}
+botonmenu.addEventListener("click", menhambur);
