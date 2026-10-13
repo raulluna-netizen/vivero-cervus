@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            Lavanderia Burbujas
+        </title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head>
+    <body>
+        <header id="inicio">
+            <h1>Lavanderia Burbujas</h1>
+            <nav class="menu">
+                <a href="#inicio">Inicio</a></li>
+                <a href="#lavados">Nuestros lavados</a></li>
+                <a href=" #contacto">Contacto</a></li>
+            </nav>
+        </header>
+        <main>
+            <div class="contenedor" id="lavados">
+                <h2>Nuestros lavados</h2>
+                <p>Una lavanderia que se enorgullese de su servicio y sus precios, teniendo como prioridad la satisfación de los clientes</p> 
+                <ul class="stock">
+                    <li>Lavado por kilo - Bs 15</li>
+                    <li>Planchado de camisa - Bs 8</li>
+                    <li>Lavado de edredon - Bs 35</li>
+                </ul>
+            </div>
+            <div clas="contenedor" id="lavados">
+                <h2>Deja tu encargo</h2>
+                <form>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre">
+                    <br>
+                    <label for="correo">Correo electronico:</label>
+                    <input type="email" id="correo">
+                    <br>
+                    <label for="encargo">Tu encargo:</label>
+                    <input type="text" id="encargo">
+                </form>
+                <button type="button" id="btn-confirmar">Confirmar encargo</button>
+                <p id="mensaje" class="oculto"></p>
+            </div>
+
+        </main>
+        <footer>
+            <p>Parcial 1 - Raul Bernardo Luna Tufiño - 12 de octubre de 2026</p>
+        </footer>
+
+    <script src="script.js"></script>
+    </body>
