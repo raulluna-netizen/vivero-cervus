@@ -30,9 +30,9 @@ botonmenu.addEventListener("click", menhambur);
 const formpd = document.querySelector("#form-pedido");
 const aviso = document.querySelector("#mensaje");
 
-function revisar(evento){
+function revisar(event){
   
-    evento.preventDefault();
+    event.preventDefault();
 
 const nom = document.querySelector("#nombre").value;
 const corr = document.querySelector("#correo").value;
