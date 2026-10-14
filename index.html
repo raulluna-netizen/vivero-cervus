@@ -43,6 +43,20 @@
                 <li>Venta de Alimento Vivo</li>
             </ul>
         </div>
+        <form id="form-pedido" novalidate> 
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+                    <br>
+                    <label for="correo">Correo electronico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="tunombre@correo.com" required>
+                    <br>
+                    <label for="encargo">Tu encargo:</label>
+                    <textarea id="pedido" name="pedido" rows="4" placeholder="Cuentanos lo que necesitas" required>
+                    <button type="button" id="btn-confirmar">Enviar pedido</button>
+                     <p type="submit" id="mensaje" class="oculto"></p>
+                </form>
+                
+               
         <h3>Contactanos</h3>      
         <div>
             <h4>Direccion</h4>
@@ -51,6 +65,7 @@
             <p>Av.Argentina n°300 Zona Ciudad Satelite</p>
             <h4>Telefono</h4>
             <p>60606060</p>
+                    
         </div class="contenedor">
         <h5>Para saber más</h5>
         <h3><a href="https://es.wikipedia.org/wiki/Planta_acu%C3%A1tica">¿Que son las plantas acuaticas?</a></h3>
