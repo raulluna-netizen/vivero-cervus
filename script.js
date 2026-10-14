@@ -24,3 +24,34 @@ function menhambur(){
     men.classList.toggle("abierto");
 }
 botonmenu.addEventListener("click", menhambur);
+
+
+
+const formpd = document.querySelector("#form-pedido");
+const aviso = document.querySelector("#mensaje");
+
+function revisar(evento){
+  
+    evento.preventDefault();
+
+const nom = document.querySelector("#nombre").value;
+const corr = document.querySelector("#correo").value;
+
+if(nom === ""){
+    aviso.textContent ="Nombre no ingresado";
+    aviso.classList.add("error");
+    aviso.classList.remove("exito");
+}
+else if(corr.includes("@") === false){
+    aviso.textContent ="Correo no Ingresado, falta @";
+    aviso.classList.add("error");
+    aviso.classList.remove("exito");
+}
+else{
+    aviso.textContent ="Pedido realizado con exito";
+    aviso.classList.add("exito");
+    aviso.classList.remove("error");
+}
+}
+
+formpd.addEventListener("submit", revisar);
