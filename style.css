@@ -112,9 +112,17 @@ body.negro{
 body.negro .cabeza{
     background: #3B5E34;
 }
-body.negro div{
-    background:#121212;
+body.negro section{
+    background:#161616;
     color: white;
+}
+body.negro .opciones li {
+    background-color: #1e251c;
+    color: #ffffff;
+}
+body.negro .stock li {
+    background-color: #1a1a1a;
+    border-color: #333333;
 }
 
 #modoilum{
@@ -144,7 +152,14 @@ input{
     font-size: 14px;
 }
 
-main, section, .contenido-body {
+main{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.contenido-body{
     max-width: 1000px;
     margin: 30px auto;
     padding: 0 20px;
@@ -177,6 +192,14 @@ main, section, .contenido-body {
     justify-content: center;
     gap: 20px;
 }
+#form-pedido div {
+    margin-bottom: 15px;          
+    text-align: left;                
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 #form-pedido input{
     padding: 8px 16px;
@@ -184,9 +207,81 @@ main, section, .contenido-body {
     border-color: black;
     border-radius: 20px;
     font-size: 14px;
+    width: 30%; 
 }
 
 #form-pedido label{
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva; 
+    display: block;                
+    margin-bottom: 6px;  
+}
+#form-pedido button {
+    display: block;
+    margin: 20px auto 10px auto;     
+   
+}
+
+.cabeza, h1, h2, h3, #form-pedido {
+    text-align: center;
+}
+
+textarea {
+    padding: 8px 16px;
+    border-color: black;
+    border-radius: 15px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 5px auto;
+     
+}
+
+section{
+    background-color: #EBF2EA;
+    border-radius: 8px;
+    margin: 25px auto;               
+    padding: 25px 30px; 
+}
+
+.opciones {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opciones li {
+    background-color: #f1f7f0;       
+    border-left: 5px solid #3B5E34;  
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.stock {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 15px;
+}
+
+.stock li {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
