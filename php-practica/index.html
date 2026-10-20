@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            Vivero Cervus
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head>
+    <body>
+        <header id="inicio">
+           
+            <div class="cabeza">     
+                <h1>Vivero Cervus</h1>
+                <p>Vivero especializado en crianza de plantas acuaticas</p>
+            </div>
+            
+         
+        <nav class="menu">
+            <button id="menu">Menú</button>
+            <ul >
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#producto">Productos</a></li>
+                <li><a href="#tutoriales">Tutoriales</a></li>
+            </ul>
+        </nav>
+        </header>
+        
+        <main>
+                   
+        <button id="modoilum">Modo Oscuro</button>
+        <section>
+        <h2>Servicios</h2>
+            <ul class="opciones">
+                <li>Venta de Plantas</li>
+                <li>Venta de Implementos y Equipos</li>
+                <li>Asesoramiento Personalizado</li>
+                <li>Venta de Alimento Vivo</li>
+            </ul>
+        </section>
+        <section id="producto">
+            <h2>Productos</h2>
+
+            <ul class="stock">
+                    <li>Naja Guadalupensis           Bs 8</li>
+                    <li>Elodea                       Bs 5</li>
+                    <li>Cola de Zorro                Bs 5</li>
+                    <li>Berro de agua                Bs 5</li>
+                    <li>Limnobium                    Bs 3</li>
+                    <li>Helecho Salvinia             Bs 3</li>
+                    <li>Jacinto de Agua              Bs 5</li>
+                    <li>Utricularia Gibba            Bs 15</li>
+                    <li>Porción de Lenteja de agua   Bs 3</li>
+                    <li>Porción de Azolla            Bs 3</li>
+                    <li>Porción de Pulga de Agua     Bs 10</li>
+                    <li>Porción de Caracoles Physa   Bs 10</li>
+                    
+            </ul>
+         
+        </section>
+        <section>
+        <h2>Pedidos</h2>
+        <form id="form-pedido" novalidate action="procesar.php" method="POST"> 
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+                    <br>
+                    <label for="correo">Correo electronico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="tunombre@correo.com" required>
+                    <br>
+                    <label for="encargo">Tu encargo:</label>
+                    <textarea id="pedido" name="pedido" rows="4" placeholder="Cuentanos lo que necesitas" required></textarea>
+                    <button type="submit" id="btn-confirmar">Enviar pedido</button>
+                    <p type="submit" id="mensaje" class="oculto"></p>
+                </form>
+        </section>
+        
+        <section id="tutoriales">
+        <h2>Tutoriales</h2>
+        <br>
+        <h3>Plantas Acuáticas Flotantes (Superficie)</h3>
+        <p>
+            • Especies: Lenteja de agua, Limnobium, Jacinto de agua.
+            • Luz: Alta y directa.
+            • Función: Absorben nitratos a gran velocidad y controlan las algas dando sombra.
+            • Cuidado clave: El agua no debe mojar la parte superior de sus hojas ni tener corriente fuerte, o se pudrirán.
+        </p>
+        <h3>Plantas Suspendidas o Sumergidas</h3>
+        <p>      
+            • Especies: Cola de zorro, Elodea, Naja.
+            • Luz: Media a alta (debe atravesar el agua).
+            • Función: Son las principales oxigenadoras del agua y ofrecen refugio subacuático.
+            • Cuidado clave: No necesitan enterrarse en sustrato. Requieren podas constantes para que las partes bajas no mueran por falta de luz.
+        </p>
+        <h3>Cultivo de Berro de Agua</h3>
+        <p>
+            • Ubicación: Raíces sumergidas, pero tallos y hojas al aire libre (usa canastas flotantes).
+            • Luz y Agua: Requiere luz brillante y prefiere aguas frescas (10°C a 22°C).
+            • Función: Filtra el agua de forma masiva consumiendo nutrientes del fondo.
+        </p>
+        <h3>Cultivo de Pulgas de Agua </h3>
+        <p>
+            • Entorno: Contenedor separado sin peces. Usa solo un aireador muy lento (los filtros mecánicos las succionan).
+            • Alimento: Levadura de cerveza disuelta en agua. Agrega unas gotas hasta que el agua enturbie levemente; no repitas el alimento hasta que el agua vuelva a estar 100% cristalina.
+            • Mantenimiento: Cambios del 20% de agua semanal con agua sin cloro.
+        </p>
+        <h3>Caracoles Physa</h3>
+        <p>
+            • Alimento: Comen algas, hojas muertas y desechos. No dañan las plantas sanas.
+            • Agua: Prefieren pH neutro o alcalino (7.0 a 8.0) para mantener sus conchas fuertes.
+            • Población: Se reproducen según el alimento disponible. Si hay una explosión de caracoles, reduce la comida del tanque.
+        </p>
+        </section>
+        <section>      
+        <h3>Contactanos</h3>      
+            <h4>Direccion</h4>
+            <p>Potosí</p>
+            <p>Av.Union /sn Zona Villa Imperial</p>
+            <p>Av.Argentina n°300 Zona Ciudad Satelite</p>
+            <h4>Telefono</h4>
+            <p>60606060</p>
+                    
+        </section>
+        <h5>Para saber más</h5>
+        <h3><a href="https://es.wikipedia.org/wiki/Planta_acu%C3%A1tica">¿Que son las plantas acuaticas?</a></h3>
+        </main>  
+        <footer>
+            <p>&copy; cervus corporation, Raul Bernardo Luna Tufiño 2026</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+   
+</html>
