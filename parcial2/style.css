@@ -1,0 +1,114 @@
+nav{
+    justify-content: space-around;
+    background: #3B5E34;
+    width: 100%;
+    margin: auto;
+}
+header{
+    background: #3B5E34;
+    width: 100%;
+    height: 10%;
+    color: white;
+    padding: 0px 0px 20px 0px;
+}
+
+header .cabeza h1{
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif; 
+    font-weight: normal;
+    padding-top: 40px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva; 
+    color: black;
+}
+
+input{
+    padding: 8px 16px;
+    border-color: black;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+main{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.contenido-body{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#aviso-horno{
+    display: none;
+    margin: 10px 0 0 0;
+    padding: 10px 0 15px 0;
+    border-radius: 3px;
+}
+
+#aviso-horno.error{
+    display: block;
+    background-color: rgb(82, 2, 2);
+    color: rgb(235, 90, 114);
+
+}
+
+#aviso-horno.exito{
+    display: block;
+    background-color: rgb(1, 68, 10);
+    color: rgb(33, 255, 70);
+}
+
+#form-horno{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#form-horno input{
+    padding: 8px 16px;
+    margin: 5px;
+    border-color: black;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 30%; 
+}
+
+#form-horno label{
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva; 
+    display: block;                
+    margin-bottom: 6px;  
+}
+#form-horno button {
+    display: block;
+    margin: 20px auto 10px auto;     
+   
+}
+
+textarea {
+    padding: 8px 16px;
+    border-color: black;
+    border-radius: 15px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 5px auto;
+     
+}
+

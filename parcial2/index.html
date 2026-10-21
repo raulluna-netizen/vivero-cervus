@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            Salteneria El Horno
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head>
+    <body>
+        <header id="inicio">
+           
+            <div class="cabeza">     
+                <h1>Salteneria El Horno</h1>
+                <p>Atendiendo a la población desde el año 1945 con una calidad de 5 estrellas avalada por nuestra clientela</p>
+            </div>
+        </header>
+        
+        <main>
+                   
+        <section>
+        <h2>Pedidos</h2>
+        <form id="form-horno" novalidate action="procesar.php" method="POST"> 
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+                    <br>
+                    <label for="correo">Correo electronico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="tunombre@correo.com" required>
+                    <br>
+                    <label for="encargo">Que salteñas quieres:</label>
+                    <textarea id="pedido" name="pedido" rows="4" placeholder="Salteñas" required></textarea>
+                    <button type="submit" id="btn-confirmar">Hacer mi pedido</button>
+                    <p type="submit" id="aviso-horno" class="aviso"></p>
+                </form>
+        </section>
+        </main>  
+        <footer>
+            <p>Parcial 2 - Raul Bernardo Luna Tufiño - 20 de octubre de 2026</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+   
+</html>
