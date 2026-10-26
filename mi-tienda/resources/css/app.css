@@ -1,0 +1,297 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+nav{
+    justify-content: space-around;
+    background: #3B5E34;
+    width: 100%;
+    margin: auto;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva; 
+    font-size: 20px;   
+}
+.menu>li{
+    display: inline-block;
+    background: #3B5E34;
+    list-style: none;
+    place-items: center;
+    margin-left: 40px;
+    align-items: center;
+    margin: 50px;
+}
+
+header{
+    background: #3B5E34;
+    width: 100%;
+    height: 10%;
+    color: white;
+    padding: 0px 0px 20px 0px;
+}
+
+header .cabeza h1{
+    align-items: center;
+    justify-content: center;
+}
+.buscar{
+    width: 90%;
+    max-width: 1200px;
+    margin: 15px auto 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.buscar #modoilum{
+    display: flex;
+    align-items: right;
+    float: right;
+}
+.buscar #busq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif; 
+    font-weight: normal;
+    padding-top: 40px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva; 
+    color: black;
+}
+#menu {
+    display: none;
+}
+
+@media (max-width: 550px){
+header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+nav ul{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul.abierto{
+    display:flex;
+}
+#menu {
+    display: block;
+    background: #3B5E34;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    
+}
+
+}
+body.negro{
+    background:#121212;
+    color: white;
+}
+body.negro .cabeza{
+    background: #3B5E34;
+}
+body.negro section{
+    background:#161616;
+    color: white;
+}
+body.negro .opciones li {
+    background-color: #1e251c;
+    color: #ffffff;
+}
+body.negro .stock li {
+    background-color: #1a1a1a;
+    border-color: #333333;
+}
+
+#modoilum{
+    border-radius: 12px;
+    background-color: #4f7942;
+    border-color: azure;
+    border-style: solid;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.bf{
+    border-radius: 12px;
+    background-color: #4f7942;
+    border-color: azure;
+    border-style: solid;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+input{
+    padding: 8px 16px;
+    border-color: black;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+main{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.contenido-body{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#mensaje{
+    display: none;
+    margin: 10px 0 0 0;
+    padding: 10px 0 15px 0;
+    border-radius: 3px;
+}
+
+#mensaje.error{
+    display: block;
+    background-color: rgb(82, 2, 2);
+    color: rgb(235, 90, 114);
+
+}
+
+#mensaje.exito{
+    display: block;
+    background-color: rgb(1, 68, 10);
+    color: rgb(33, 255, 70);
+}
+
+#form-pedido{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#form-pedido div {
+    margin-bottom: 15px;          
+    text-align: left;                
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#form-pedido input{
+    padding: 8px 16px;
+    margin: 5px;
+    border-color: black;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 30%; 
+}
+
+#form-pedido label{
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva; 
+    display: block;                
+    margin-bottom: 6px;  
+}
+#form-pedido button {
+    display: block;
+    margin: 20px auto 10px auto;     
+   
+}
+
+.cabeza, h1, h2, h3, #form-pedido {
+    text-align: center;
+}
+
+textarea {
+    padding: 8px 16px;
+    border-color: black;
+    border-radius: 15px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 5px auto;
+     
+}
+
+section{
+    background-color: #EBF2EA;
+    border-radius: 8px;
+    margin: 25px auto;               
+    padding: 25px 30px; 
+}
+
+.opciones {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opciones li {
+    background-color: #f1f7f0;       
+    border-left: 5px solid #3B5E34;  
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.stock {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 15px;
+}
+
+.stock li {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
